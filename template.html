@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="15" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+
+    <style>
+
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }        
+
+        h1.title {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            margin: auto;
+            width: 50%;
+            justify-content: space-between;
+        }
+
+        .container div.box {
+            width: 48%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: 1px solid black;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        span {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">ASSGNMENT 3 : Auto Reload Data Projects</h1>
+    <div class="container">
+        <div class="water box">
+            <h3>Water</h3>
+            <div class="value">
+                <h1>{{.WaterValue}} <span>m</span></h1>  
+            </div>
+            <h3>Status : {{.WaterStatus}}</h3>
+        </div>
+        <div class="wind box">
+            <h3>Wind</h3>
+            <div class="value">
+                <h1>{{.WindValue}} <span> m/s</span></h1>
+            </div>
+            <h3>Status : {{.WindStatus}}</h3>
+        </div>
+    </div>
+    
+
+    
+</body>
+</html>
